@@ -9,7 +9,7 @@ _CYAN=`tput setaf 6`
 _RESET=`tput sgr0`
 
 VERSION=1.0
-echo "${_GREEN}Monero mining setup script v$VERSION.${_RESET}"
+echo "${_GREEN}Docker setup script v$VERSION.${_RESET}"
 echo "${_GREEN}(please report issues to tronexia@gmail.com email with full output of this script with extra \"-x\" \"bash\" option)${_RESET}"
 echo
 echo -e "${_CYAN}Docker installation :: initiated${_RESET}"
@@ -34,7 +34,7 @@ apt install docker-ce
 
 systemctl status docker
 sleep 5
-sudo usermod -aG docker $USER
+sudo usermod -aG docker aneh2killa
 
 sudo chmod 666 /var/run/docker.sock
 
